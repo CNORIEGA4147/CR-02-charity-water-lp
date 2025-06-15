@@ -6,10 +6,15 @@
     <title>charity: water — Student Initiative</title>
     <!-- Tailwind via CDN for rapid styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body, input, button, h1, h2, h3, h4, h5, h6, p, a, nav, header, section, div {
+        font-family: 'Proxima Nova', Arial, sans-serif !important;
+      }
+    </style>
   </head>
   <body class="bg-[#FFF8F2] text-black font-sans min-h-screen">
     <!-- ░░ Header ░░ ---------------------------------------------------- -->
-    <header class="flex flex-wrap items-center justify-between p-5 border-b" style="min-height:48px;">
+    <header class="flex flex-wrap items-center justify-between p-5 border-b bg-white" style="min-height:48px;">
       <div class="flex items-center space-x-2">
         <img src="img/charitwaterlogoblack.png" alt="charity: water logo" width="200" class="h-8.5" />
       </div>
@@ -59,7 +64,7 @@
   </div>
   <!-- Text block on the right -->
   <div class="hero-text text-left" style="max-width: 500px;">
-    <h1 style="font-size: 2.8rem; font-weight: bold; line-height: 1.1;">Change the World—<br>Without Waiting To<br>Graduate.</h1>
+    <h1 style="font-family: 'Avenir', serif; font-size: 2.8rem; font-weight: bold; line-height: 1.1;">Change the World—<br>Without Waiting To<br>Graduate.</h1>
     <p style="width: 300%; max-width: none; margin-left: 0; margin-right: 0;">Real impact. Driven by students. Made for students.</p>
     <div class="hero-buttons flex justify-center mt-4 gap-2">
       <button class="build-btn" style="background-color: transparent; color: #000; border: 2px solid #000; padding: 4px 40px; border-radius: 16px; font-size: 1em; font-weight: normal; cursor: pointer; height: 28px; display: flex; align-items: center; justify-content: center; z-index: 2; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">Build</button>
@@ -80,9 +85,12 @@
           class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
         />
         <div class="absolute inset-0 bg-black/40"></div>
-        <div class="absolute bottom-4 left-4 text-white font-semibold">
-          <div class="text-lg">DONATE</div>
-          <div class="text-sm">Give Water. Give Life.</div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white font-semibold w-full">
+         
+          <button style="margin-top: 10px; background-color: rgba(0,0,0,0.5); color: #fff; border: 2px solid #fff; border: none; padding: 6px 24px; border-radius: 16px; font-size: 1em; font-weight: bold; cursor: pointer;"> <div class="flex flex-col items-center">
+            <div class="text-lg text-white ">DONATE</div>
+            <div class="text-sm text-white font-normal mt-1">Give water. Give life.</div>
+          </div></button>
         </div>
       </div>
 
@@ -94,9 +102,11 @@
           class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
         />
         <div class="absolute inset-0 bg-black/40"></div>
-        <div class="absolute bottom-4 left-4 text-white font-semibold">
-          <div class="text-lg">TRACK</div>
-          <div class="text-sm">See your impact live.</div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white font-semibold w-full">
+          <button style="margin-top: 10px; background-color: rgba(0,0,0,0.5); color: #fff; border: 2px solid #fff; border: none; padding: 6px 24px; border-radius: 16px; font-size: 1em; font-weight: bold; cursor: pointer;"> <div class="flex flex-col items-center">
+              <div class="text-lg">TRACK</div>
+              <div class="text-sm font-normal">See your impact live.</div>
+            </div></button>
         </div>
       </div>
 
@@ -108,9 +118,11 @@
           class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
         />
         <div class="absolute inset-0 bg-black/40"></div>
-        <div class="absolute bottom-4 left-4 text-white font-semibold">
-          <div class="text-lg">INFLUENCE</div>
-          <div class="text-sm">Join our ambassador program.</div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white font-semibold w-full">
+          <button style="margin-top: 10px; background-color: rgba(0,0,0,0.5); color: #fff; border: 2px solid #fff; border: none; padding: 6px 24px; border-radius: 16px; font-size: 1em; font-weight: bold; cursor: pointer;"> <div class="flex flex-col items-center">
+              <div class="text-lg">INFLUENCE</div>
+              <div class="text-sm font-normal">Join our ambassador program.</div>
+            </div></button>
         </div>
       </div>
     </section>
