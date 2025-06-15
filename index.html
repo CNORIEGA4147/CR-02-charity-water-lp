@@ -1,47 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>charity: water — Student Initiative</title>
+    <!-- Tailwind via CDN for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#FFF8F2] text-black font-sans min-h-screen">
+    <!-- ░░ Header ░░ ---------------------------------------------------- -->
+    <header class="flex flex-wrap items-center justify-between p-5 border-b" style="min-height:48px;">
+      <div class="flex items-center space-x-2">
+        <img src="img/charitwaterlogoblack.png" alt="charity: water logo" width="200" class="h-8.5" />
+      </div>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+      <nav class="flex space-x-6 text-sm font-medium ml-auto mr-8">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About&nbsp;Us</a>
+        <a href="#" class="hover:underline">Take&nbsp;Action</a>
+        <a href="#" class="hover:underline">Why&nbsp;Water?</a>
+      </nav>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+      <div class="relative mt-2 md:mt-0 w-full md:w-auto">
+        <input
+          type="text"
+          placeholder="Search"
+          class="border rounded pl-3 pr-8 py-1 text-sm w-full md:w-60"
+          style="background-color: #FFC907; border-color: #FFC907; color: #000;"
+          onfocus="this.style.color='#000'; this.style.setProperty('--placeholder-color', '#000');"
+        />
+        <style>
+          input::placeholder {
+            color: #000 !important;
+            opacity: 1;
+          }
+        </style>
+        <!-- Magnifying‑glass icon -->
+        <svg
+          class="w-4 h-4 absolute right-2 top-1.5 text-black pointer-events-none"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.9 14.32a8 8 0 111.414-1.414l5.387 5.387a1 1 0 01-1.414 1.414l-5.387-5.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </header>
+<!-- Hero Section -->
+<section class="hero-section relative flex items-center justify-start" style="min-height: 400px; max-height: 600px; width: 100vw; overflow: hidden;">
+  <!-- Image on the left side -->
+  <div style="flex: 0 0 50%; height: 100%; position: relative; display: flex; align-items: center; justify-content: flex-start;">
+    <img src="img/HeroSection.jpg" alt="Student drinking water" class="hero-image" style="width:100%; height:100%; max-height:600px; min-height:400px; object-fit:contain; background:#FFF8F2; border-radius:0;" />
+    <!-- Fade overlay on the right side of the image -->
+    <div style="position:absolute; top:0; right:0; width:60%; height:100%; z-index:2; pointer-events:none; border-radius: 0; background: linear-gradient(to right, rgba(255,255,255,0) 0%, #FFF8F2 100%);"></div>
+  </div>
+  <!-- Text block on the right -->
+  <div class="hero-text text-left" style="max-width: 500px;">
+    <h1 style="font-size: 2.8rem; font-weight: bold; line-height: 1.1;">Change the World—<br>Without Waiting To<br>Graduate.</h1>
+    <p style="width: 300%; max-width: none; margin-left: 0; margin-right: 0;">Real impact. Driven by students. Made for students.</p>
+    <div class="hero-buttons flex justify-center mt-4 gap-2">
+      <button class="build-btn" style="background-color: transparent; color: #000; border: 2px solid #000; padding: 4px 40px; border-radius: 16px; font-size: 1em; font-weight: normal; cursor: pointer; height: 28px; display: flex; align-items: center; justify-content: center; z-index: 2; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">Build</button>
+      <button class="future-btn" style="background-color: transparent; color: #000; border: 2px solid #000; padding: 4px 40px; border-radius: 16px; font-size: 1em; font-weight: normal; cursor: pointer; height: 28px; display: flex; align-items: center; justify-content: center;">Future</button>
+      <button class="access-btn" style="background-color: transparent; color: #000; border: 2px solid #000; padding: 4px 40px; border-radius: 16px; font-size: 1em; font-weight: normal; cursor: pointer; height: 28px; display: flex; align-items: center; justify-content: center;">Access</button>
+      <button class="give-btn" style="background-color: #FFC907; color: #000000; border: 2px solid #000; padding: 4px 24px; border-radius: 16px; font-size: 1em; font-weight: bold; cursor: pointer; box-shadow: none; transition: background 0.2s, transform 0.2s; margin-top: 0; height: 28px; display: flex; align-items: center; justify-content: center; white-space: nowrap;">Give 💧</button>
+    </div>
+  </div>
+</section>
+
+    <!-- ░░ Action Cards ░░ ---------------------------------------------- -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 md:p-12">
+      <!-- Card: Donate -->
+      <div class="relative rounded-lg overflow-hidden shadow-lg group">
+        <img
+          src="img/Donate.jpg"
+          alt="Donate"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+        />
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute bottom-4 left-4 text-white font-semibold">
+          <div class="text-lg">DONATE</div>
+          <div class="text-sm">Give Water. Give Life.</div>
         </div>
-    </section>
+      </div>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+      <!-- Card: Track -->
+      <div class="relative rounded-lg overflow-hidden shadow-lg group">
+        <img
+          src="img/Track.jpg"
+          alt="Track"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+        />
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute bottom-4 left-4 text-white font-semibold">
+          <div class="text-lg">TRACK</div>
+          <div class="text-sm">See your impact live.</div>
+        </div>
+      </div>
+
+      <!-- Card: Influence -->
+      <div class="relative rounded-lg overflow-hidden shadow-lg group">
+        <img
+          src="img/influence.jpg"
+          alt="Influence"
+          class="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+        />
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute bottom-4 left-4 text-white font-semibold">
+          <div class="text-lg">INFLUENCE</div>
+          <div class="text-sm">Join our ambassador program.</div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
+
